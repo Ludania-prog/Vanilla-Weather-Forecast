@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meteo App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <h1 class="weather-app-city" id="city"></h1>
+          <p class="weather-app-details">
+            <span id="time"></span>, <span id="description"></span>
+            <br />
+            Humidity: <strong id="humidity">%</strong> Wind:
+            <strong id="wind-speed">km/h</strong>
+          </p>
+          <div class="weather-app-temperature-container">
+            <div id="icon">
+              <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="clear sky"
+                class="weather-app-icon"
+              />
+            </div>
+            <div class="weather-app-temperature-value" id="temperature"></div>
+            <div class="weather-app-unit">ºC</div>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thu</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Fri</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sat</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Ludania-prog" target="_blank"
+          >Ludania David</a
+        >, is
+        <a href="https://github.com/Ludania-prog/meteo" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://meteoshecodesweatherapp.netlify.app/" target="_blank">
+          hosted on Netlify</a
+        >
+      </footer>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
